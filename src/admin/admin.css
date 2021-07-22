@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../fonts/Lato-Regular.ttf)
+  }
+  
+  @font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.otf);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  :root {
+    --primaryColor: #13b306;
+    --secondaryColor: #fbcd6b;
+    --tertiaryColor: #f2fcf2;
+    
+    --primaryFont: "Lato-Regular";
+    --secondaryFont: "Roboto-Regular";
+    --tertiaryFont: "Montserrat-Regular";
+  
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --charcoalBlack: rgb(58, 58, 58);
+    --mainRed: #bd0303;
+  
+    --offWhite: #f7f7f7;
+    --mainBackground: #fff;
+  
+    --mainOverlay: rgba(35, 10, 36, 0.4);
+  
+  
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 0.3rem;
+    --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    --mainBorderRadius: 0.25rem;
+  
+    --max-body-width: 1500px;
+  }
+  
+  body {
+    font-family: var(--primaryFont);
+    color: var(--mainBlack);
+    background: var(--mainBackground);
+    line-height: 1.4;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .admin {
+      background: var(--mainWhite);
+      margin-bottom: 4rem;
+      width: 100%;
+      max-width: var(--max-body-width);
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .left-panel {
+      width: 100%;
+      padding: 2rem 1rem;
+      border-right: 2px solid var(--tertiaryColor);
+      height: 100%;
+      box-shadow: 1px 0 7px rgba(0, 0, 0, 0.3);
+      background: var(--primaryColor);
+      overflow: hidden;
+      /* background: linear-gradient(to right bottom,rgba(255,255,255,.9),rgba(255,255,255,.9)), url("./images/left.jpg") center/cover no-repeat; */
+  }
+
+  .vert-nav {
+      display: flex;
+      justify-content: center;
+  }
+
+  .vert-link {
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+  }
+
+  .vert-link>a {
+      text-decoration: none;
+      color: var(--mainWhite);
+      text-transform: capitalize;
+      transition: var(--mainTransition);
+  }
+
+  .vert-link i {
+    margin-right: .3rem;
+    font-size: .9rem;
+  }
+
+  .vert-link>a:hover,.vert-link>a:active,.vert-link>a:focus {
+      text-decoration: none;
+      color: var(--mainBlack);
+      margin-left: .3rem;
+  }
+
+  .right-panel {
+      width: 100%;
+      height: 100%;
+      padding: 2rem 1rem;
+      overflow-y: scroll;
+  }
+
+  .admin-card-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  .admin-card {
+    padding: 1rem .1rem;
+    border-radius: .4rem;
+    box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-left: .2rem solid var(--mainWhite);
+  }
+
+  .bg-primary-swift {
+    background: var(--primaryColor);
+  }
+
+  .bg-secondary-swift {
+    background: var(--secondaryColor);
+  }
+
+  .bg-tertiary-swift {
+    background: var(--tertiaryColor);
+  }
+
+
+
+  .text-primary-swift {
+    color: var(--primaryColor);
+  }
+
+  .text-secondary-swift {
+    color: var(--secondaryColor);
+  }
+
+  .text-dark-swift {
+    color: var(--mainBlack);
+  }
+
+
+
+  .card-title {
+      color: var(--mainWhite);
+      letter-spacing: .2rem;
+      font-size: 1.4rem;
+  }
+
+  .card-link {
+      text-decoration: none;
+      font-size: .8rem;
+      transition: var(--mainTransition);
+  }
+  .card-link:hover,.card-link:active,.card-link:focus {
+      text-decoration: none;
+      color: var(--mainBlack);
+  }
+
+  .right-panel-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      width: 70%;
+      border-radius: .4rem;
+      border: 2px solid var(--tertiaryColor);
+      background: var(--mainWhite);
+  }
+
+  .pop-nav {
+      display: flex;
+  }
+
+  .pop-nav-link {
+      margin-top: 1rem;
+      margin: 1rem 2rem 0 2rem;
+  }
+
+  .pop-nav-link>a{
+      color: var(--mainRed);
+      font-size: .8rem;
+  }
+
+  .admin-panel-title {
+      color: var(--primaryColor);
+      text-transform: capitalize;
+      font-family: var(--tertiaryFont);
+      font-size: 1.3rem;
+  }
