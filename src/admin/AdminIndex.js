@@ -83,11 +83,11 @@ const AdminIndex = () => {
               <h2 className="text-center admin-panel-title">
                 swift-ke admin panel
               </h2>
-              <div className="row">
-                <div className="col-md-7">
+              <div className="row py-4 pr-5">
+                <div className="col-md-8 col-sm-12">
                   <ExampleLine />
                 </div>
-                <div className="col md-5">
+                <div className="col-md-4 col-sm-12">
                   <ExamplePie />
                 </div>
               </div>
